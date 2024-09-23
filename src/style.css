@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom thin scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Custom scrollbar hiding styles */
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar in Chrome, Safari, and Edge */
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* Hides the scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hides the scrollbar in Firefox */
+}
